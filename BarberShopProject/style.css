@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Zilla Slab', serif;
+}
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(8, 125, 189, 0.938)), url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.banner-logo {
+    position: absolute;
+    top:4%;
+    left:6%;
+}
+.banner-text{
+    text-align: center;
+    padding: 20% 0;
+    color: aliceblue;
+}
+.banner-text h1{
+    font-size: 130px;
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+}
+.banner-links{
+    margin: 8vh auto;
+}
+.banner-links a{
+    text-decoration:none;
+    color: #fff;
+    width: 140px;
+    font-weight: 700;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding:20px 0;
+    margin: 0 12px;
+    position: relative;
+    z-index: 1;
+}
+.banner-links a span{
+    
+    position: absolute;
+    width:0;
+    height:100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-links a:hover span{
+    width:100%;
+}
+.banner-links a:hover{
+    color: black;
+
+}
